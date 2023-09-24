@@ -1,0 +1,129 @@
+:root {
+    --text-color: #DAD7CD;
+    --secondary-color: #A3B18A;
+    --secondary-bg-color: #588157;
+    --button-bg-color: #3A5A40;
+    --bg-color: #344E41;
+    --button-padding: 16px 32px;
+    --nav-link-padding: 8px 16px;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border-radius: 8px;
+    border-width: 1px;
+    padding: var(--button-padding);
+}
+
+hr {
+    width: 10%;
+}
+
+button a {
+    font-size: 1.5rem;
+    padding: var(--button-padding);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:active {
+    color: var(--text-color);
+}
+
+nav {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+}
+
+nav ul {
+    display: inline-block;
+    padding: 0px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav li a {
+    padding: var(--nav-link-padding);
+    font-size: 1.2rem;
+}
+
+nav li a:hover {
+    background-color: var(--secondary-color);
+}
+
+img {
+    max-width: 512px;
+}
+
+.container {
+    padding: 0px 30px;    
+    font-size: 1.5rem;
+}
+
+.height-max {
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid-item {
+    min-width: 256px;
+    min-height: 128px;
+    padding: var(--nav-link-padding);
+}
+
+.grid-item:hover{
+    background-color: var(--secondary-bg-color);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.icon {
+    fill: var(--text-color);
+    margin: 0 8px;
+}
+
